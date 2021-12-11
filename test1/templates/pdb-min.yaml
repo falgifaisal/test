@@ -1,0 +1,10 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  creationTimestamp: null
+  name: pdb-min
+spec:
+  minAvailable: {{ .Values.pdbMin }}
+  selector:
+    matchLabels:
+      app: sayurbox

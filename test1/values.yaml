@@ -1,0 +1,11 @@
+replicaCount: 1
+servicesType: NodePort
+requestCpu: "50m"
+requestMemory: "80Mi"
+limitsCpu: "150m"
+limitsMemory: "128Mi"
+replicasMax: 10
+replicasMin: 5
+pdbMin: 3
+pdbMax: 2
+servicesPort: 7000

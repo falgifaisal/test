@@ -1,0 +1,10 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  creationTimestamp: null
+  name: pdb-max
+spec:
+  maxUnavailable: {{ .Values.pdbMax }}
+  selector:
+    matchLabels:
+      app: sayurbox
