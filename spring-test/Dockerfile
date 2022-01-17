@@ -13,4 +13,3 @@ RUN mvn install
 ENTRYPOINT ["java", "-jar", "target/falgi-0.0.1-SNAPSHOT.jar"]
 
 
-
